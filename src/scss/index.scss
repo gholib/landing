@@ -1,12 +1,44 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import "header";
 
 *{
     border: none;
+}
+body{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+
+    ul{
+        list-style: none;
+    }
+}
+li{
+    color: #fff;
+}
+a{
+    text-decoration: none;
 }
 .zx-2{
     z-index: 2;
 }
 .test{
     height: 1500px;
+}
+.lg-w{
+    max-width: $lg-width !important;
+}
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+.btn-rounded {
+    border-radius: 10rem;
+}
+.fa-google-play:before {
+    content: "\f3ab";
+}
+
+.ptb-130{
+    padding: 130px 0;
 }
