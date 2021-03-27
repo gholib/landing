@@ -141,3 +141,32 @@
     }
 
 }
+
+
+@media(max-width: 700px) {
+    .header{
+        .list-line{
+            display: flex !important;
+        }
+        .app-download-btn{
+            padding: 2px 15px;
+        }
+        h5{
+            font-size: 1rem;
+        }
+        h1{
+            font-size: 2rem;
+        }
+        .hero-slider-content{
+            padding-left: 1rem;
+            padding-bottom: 0 !important;
+        }
+
+        .navbar {
+            background: linear-gradient(
+        75deg
+        , #4f1bc5, #7b17c5) !important;
+            padding: .45rem 1rem !important;
+        }
+    }
+}

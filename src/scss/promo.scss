@@ -1,0 +1,21 @@
+.promo-section{
+    h2{
+        font-size: 2.8rem;
+        color: #1b2e4b;
+    }
+    .single-promo-card{
+        transition: all 300ms ease-in-out;
+        height: 16rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 16px 0 rgba(0, 0, 0 , 0.12);
+
+        &:hover{
+            -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+            -webkit-box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.13);
+            box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.13);
+            background-color: #6730e3;
+            color: #fff;
+        }
+    }
+}

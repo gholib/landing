@@ -1,10 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import "header";
+@import "promo";
+@import "about";
+@import "feature";
 
 *{
     border: none;
 }
+
 body{
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
@@ -16,6 +20,11 @@ body{
 li{
     color: #fff;
 }
+h2{
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+
 a{
     text-decoration: none;
 }
@@ -25,9 +34,7 @@ a{
 .test{
     height: 1500px;
 }
-.lg-w{
-    max-width: $lg-width !important;
-}
+
 .img-fluid{
     width: 100%;
     height: auto;
@@ -35,10 +42,52 @@ a{
 .btn-rounded {
     border-radius: 10rem;
 }
+.btn-brand-02 {
+    background-color: #9629e6;
+    border-color: #9629e6;
+    color: #fff;
+}
+.btn-outline-brand-02 {
+    border-color: #9629e6;
+    color: #9629e6;
+}
+.btn-brand-02:hover, .btn-brand-02:focus {
+    background-color: #6d14ae;
+    border-color: #6d14ae;
+    color: #fff;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.btn-outline-brand-02:hover, .btn-outline-brand-02:focus, .btn-outline-brand-02:active {
+    background-color: #6d14ae;
+    border-color: #6d14ae;
+    color: #fff;
+}
 .fa-google-play:before {
     content: "\f3ab";
 }
-
-.ptb-130{
-    padding: 130px 0;
+.text-bold{
+    font-weight: bold;
+}
+.bg-grey{
+    background: #F5F5F5;
+}
+@media(max-width: 700px) {
+    .ptb-30{
+        padding: 30px 0;
+    }
+}
+@media (min-width: 1300px) {
+    .lg-w{
+        max-width: $lg-width !important;
+    }
+    .ptb-130{
+        padding: 130px 0;
+    }
+    .affix{
+        background: linear-gradient(75deg, #4f1bc5, #7b17c5) !important;
+        box-shadow: 0 0.1rem 0.08rem rgba(0, 0, 0, 0.08);
+    }
 }
